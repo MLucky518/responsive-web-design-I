@@ -1,3 +1,369 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    
+}
+
+ body {
+	max-width:100%;
+    max-height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+    background-image: url(../img/Main.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	color:rgb(255, 255, 255);
+	font-weight:bold;
+	font-size:30px;
+	
+}
+
+
+
+
+
+.h1-text {
+    line-height: 1.5;
+	padding-top:5%;
+	font-size:80px;
+	text-align:center;
+	position:relative;
+	top:0px;
+	width:80%;
+	height:100vh;
+	color: rgb(31, 64, 173);
+	border:0.5px solid rgb(131, 150, 131);
+	border-radius: 10%;
+    background: url(../img/Background.jpg);
+	background-repeat: no-repeat;
+	
+	
+	text-shadow: 1px 0 rgb(0, 0, 0), 0 2px rgb(129, 134, 129), 2px 0 rgb(250, 255, 250), 0 1px rgb(98, 104, 98);
+	
+
+	
+}
+
+
+
+p{
+	color:white;
+	font-weight:bold;
+}
+
+.mainButtons{
+	width:10%;
+	display:flex;
+	flex-direction: column;
+    justify-content: center;
+
+}
+
+.headerContent{
+	
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.mainButtons a{
+	text-align:center;
+	margin:7% 3%;
+	width:100%;
+	padding:12%;
+	text-decoration: none;
+	color:white;
+	border: 2px rgb(81, 81, 228) solid;
+	border-radius:30%;
+	font-size:12px;
+	font-weight:bold;
+	background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSiOWvYfHcWCCXvufc2VbiZRvoqZAcOB7LHtnAR8XVXcoIrBuJ");
+	background-size:cover;
+}
+
+nav a:hover{
+	color:white;
+	background:rgb(62, 100, 206);
+	box-shadow: 0 8px 16px rgb(105, 57, 218);
+	border:2px solid black;
+}
+
+
+.logo{
+	background:rgb(121, 113, 243);
+	border-radius: 10%;
+	border:2px solid black;
+	
+	
+
+	
+}
+
+
+
+.logo:hover{
+	color:white;
+	background:rgb(62, 100, 206);
+	box-shadow: 0 8px 16px rgb(105, 57, 218);
+	border:2px solid black;
+}
+
+.mainLogo{
+	width:10%;
+}
+
+
+
+
+
+#startButton{
+	margin:2% 0;
+	color:rgb(243, 243, 243);
+    height:10%;
+    width:20%;
+    text-align:center;
+	border:1px solid rgb(3, 3, 3);
+    font-weight: bold;
+    font-size:90%;
+	text-shadow: 1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0);
+	background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSiOWvYfHcWCCXvufc2VbiZRvoqZAcOB7LHtnAR8XVXcoIrBuJ");
+	background-size:cover;
+	border:0.5px solid whitesmoke;
+	border-radius: 10%;
+	
+}
+
+#startButton:hover{
+	color:white;
+	background:rgb(62, 100, 206);
+	box-shadow: 0 8px 16px rgb(105, 57, 218);
+	border:2px solid white;
+}
+
+.circleImageContainer{
+    
+    display:flex;
+    justify-content: center;
+    margin:5% 0;
+}
+
+.middlePicBox{
+	display: flex;
+	justify-content: center;
+}
+
+.middle-img{
+border:2px solid whitesmoke;
+	width:90%;
+}
+
+.midContentContainer div{
+	width:27%;
+}
+
+.midContentContainer{
+	display:flex;
+	justify-content: space-around;
+	padding:2% 0;
+   
+}
+
+hr{
+	width:75%;
+}
+
+
+
+
+
+.empty{
+	padding: 20px;
+}
+
+.navLine{
+	visibility: hidden;
+}
+
+
+
+.bottomContentContainer div{
+	
+	width:25%;
+	margin:2%;
+}
+
+.bottomContentContainer{
+	
+	display:flex;
+	justify-content: center;
+}
+
+section{
+	padding: 3% 0;
+}
+
+
+#contactInfo{
+	width:25%;
+	
+}
+
+
+footer{
+	text-align: center;
+	color:white;
+	
+
+}
+
+
+
+@media(max-width:800px){
+
+#circlePic{
+	display:none;
+}
+
+.mainButtons{
+	flex-direction: column;
+	height:10%;
+	width:60%;
+	align-items: center;
+	margin-bottom: 20px;
+	
+}
+
+.mainButtons a{
+	width:100%;
+	padding:3%;
+}
+
+.h1-text{
+	height:30%;
+	font-size:36px;
+	padding-bottom: 20px;
+	
+}
+
+.mainLogo{
+	
+	position: relative;
+	left:40%;
+}
+
+
+.headerNav{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+}
+
+
+@media(max-width:500px){
+
+.midContentContainer{
+	flex-direction: column;
+}
+
+.bottomContentContainer{
+	flex-direction: column;
+}
+
+.midContentContainer div{
+	width:90%;
+	margin:3%;
+}
+
+.bottomContentContainer div{
+	width:90%;
+	margin: 3%;
+}
+
+.navLine{
+	visibility: visible;
+	width:150vw;
+	position: relative;
+	right:50%;
+	color:grey;
+}
+
+.h1-text{
+	font-size:26px;
+}
+
+footer{
+	margin-top:20px;
+}
+
+
+
+}
+
+
+
 
 
